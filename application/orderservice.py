@@ -185,7 +185,7 @@ def list():
 
     :return: 菜单列表
     """
-    access_token = request.headers.get("access_token")
+    access_token = request.headers.get("access-token")
 
     if access_token is None:
         login_fail_resp_data = {
